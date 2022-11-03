@@ -47,7 +47,7 @@ The Following JSON Is A Sample Output For NFT Number 61 From `TEAM GRIT`
     },
     {
       "trait_type":"hair",
-      "value":" bald"
+      "value":"bald"
     },
     {
       "trait_type":"strengths",
