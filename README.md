@@ -51,11 +51,11 @@ The Following JSON Is A Sample Output For NFT Number 61 From `TEAM GRIT`
     },
     {
       "trait_type":"strengths",
-      "value":" powerful"
+      "value":"powerful"
     },
     {
       "trait_type":"weakness",
-      "value":" sentimental"
+      "value":"sentimental"
     }
   ],
   "collection": {
