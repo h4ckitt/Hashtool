@@ -20,7 +20,7 @@ $ ./hashtool <inputfile.csv>
 
 ## Things To Note
  
-- Data Was Sanitized (e.g. Extra Spaces And Leading Trimmed) Before The SHASUM Was Computed.
+- Data Is Sanitized (e.g. Extra Spaces And Leading Commas Are Trimmed) Before The SHASUM Is Computed.
 
 The Following Assumptions Were Made As There Wasn't Any Clarity On It:
 
