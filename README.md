@@ -34,7 +34,7 @@ The Following JSON Is A Sample Output For NFT Number 61 From `TEAM GRIT`
 ```json
 {
   "format":"CHIP-0007",
-  "name":"toy-soldier",
+  "name":"toy soldier",
   "description":"a man stronger than an army",
   "minting_tool":"TEAM GRIT",
   "sensitive_content":false,
@@ -71,5 +71,5 @@ The Following JSON Is A Sample Output For NFT Number 61 From `TEAM GRIT`
 
 It Has A SHA256SUM Of :
 ```text
-9077aa62de924e9005f92e0b803062f27f61b971241961861f79edfca35f0df5
+4CDCB062CB99F5D06C295A7FE10EA6F6A583F548888D12A1A6207D85EE1990C8
 ```
