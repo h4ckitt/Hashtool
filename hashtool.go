@@ -16,8 +16,8 @@ import (
 )
 
 var (
-	hasher      hash.Hash                                //sha256 Hasher
-	digitRegexp = regexp.MustCompile(`\d+,[a-zA-Z-]*.+`) // Regular Expression For Matching Lines That Start With Number (Used For Counting Number Of NFTs)
+	hasher      hash.Hash                                                //sha256 Hasher
+	digitRegexp = regexp.MustCompile(`(?:[A-Za-z ]+)?,\d+,[a-zA-Z-]*.+`) // Regular Expression For Matching Lines That Start With Number (Used For Counting Number Of NFTs)
 )
 
 // CHIP-0007 Object Model
@@ -240,8 +240,6 @@ func serializeAndHash(entry chipJson) (string, error) {
 		return "", err
 	}
 
-	fmt.Println(string(rawMessage))
-
 	hasher.Write(rawMessage)
 
 	h := hasher.Sum(nil)
@@ -301,9 +299,7 @@ func countLines(r io.Reader) (int, error) {
 	buf := make([]byte, 64*1024)
 
 	for {
-		bufferSize, err := r.Read(buf)
-
-		count += bytes.Count(buf[:bufferSize], []byte{'\n'})
+		cursor, err := r.Read(buf)
 
 		if err != nil {
 			if errors.Is(err, io.EOF) {
@@ -311,9 +307,8 @@ func countLines(r io.Reader) (int, error) {
 			}
 			return 0, err
 		}
+
+		count += len(digitRegexp.FindAll(buf[:cursor], -1))
 	}
-
-	fmt.Println(count)
-
 	return count, nil
 }
