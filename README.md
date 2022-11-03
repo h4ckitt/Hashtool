@@ -30,40 +30,60 @@ The Following Assumptions Were Made As There Wasn't Any Clarity On It:
 
 
 ## Sample Data
-The Following JSON Is A Sample Output For NFT Number 61 From `TEAM GRIT`
+The Following JSON Is A Sample Output For NFT Number 61 From `TEAM GRIT` As At The Last Commit.
 ```json
 {
-  "format":"CHIP-0007",
-  "name":"toy soldier",
-  "description":"a man stronger than an army",
-  "minting_tool":"TEAM GRIT",
-  "sensitive_content":false,
-  "series_number":61,
-  "series_total":420,
-  "attributes":[
+  "format": "CHIP-0007",
+  "name": "toy soldier",
+  "description": "A man stronger than an army.",
+  "minting_tool": "TEAM GRIT",
+  "sensitive_content": false,
+  "series_number": 61,
+  "series_total": 420,
+  "attributes": [
     {
-      "trait_type":"gender",
-      "value":"male"
+      "trait_type": "gender",
+      "value": "Male"
     },
     {
-      "trait_type":"hair",
-      "value":"bald"
+      "trait_type": "hair",
+      "value": "bald"
     },
     {
-      "trait_type":"strengths",
-      "value":"powerful"
+      "trait_type": "eyes",
+      "value": "closed"
     },
     {
-      "trait_type":"weakness",
-      "value":"sentimental"
+      "trait_type": "teeth",
+      "value": "none"
+    },
+    {
+      "trait_type": "clothing",
+      "value": "overall"
+    },
+    {
+      "trait_type": "accessories",
+      "value": "nose mask"
+    },
+    {
+      "trait_type": "expression",
+      "value": "happy"
+    },
+    {
+      "trait_type": "strengths",
+      "value": "powerful"
+    },
+    {
+      "trait_type": "weakness",
+      "value": "sentimental"
     }
   ],
   "collection": {
-    "name":"Zuri NFT Tickets for Free Lunch",
-    "id":"b774f676-c1d5-422e-beed-00ef5510c64d",
-    "Attributes":{
-      "type":"description",
-      "value":"Rewards for accomplishments during HNGi9."
+    "name": "Zuri NFT Tickets for Free Lunch",
+    "id": "b774f676-c1d5-422e-beed-00ef5510c64d",
+    "Attributes": {
+      "type": "description",
+      "value": "Rewards for accomplishments during HNGi9."
     }
   }
 }
@@ -71,5 +91,5 @@ The Following JSON Is A Sample Output For NFT Number 61 From `TEAM GRIT`
 
 It Has A SHA256SUM Of :
 ```text
-4CDCB062CB99F5D06C295A7FE10EA6F6A583F548888D12A1A6207D85EE1990C8
+5E11226D97EFB0DA54A1186019B845E2253E37CB37788AC486FEC812C094D3A7
 ```
